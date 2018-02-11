@@ -17,6 +17,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve -s build",
+    "deploy": "pushstate-server build"
+  },
+  "devDependencies": {
+    "pushstate-server": "3.0.1",
+    "serve": "6.4.9"
   }
 }
