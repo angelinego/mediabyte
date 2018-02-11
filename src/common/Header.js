@@ -4,13 +4,9 @@ import { Link } from "react-router-dom"
 const Header = () => (
   <div className="text-center">
     <nav className="navbar navbar-default">
-      <Link to="/" activeClassName="active">
-        Home
-      </Link>
+      <Link to="/">Home</Link>
       {" | "}
-      <Link to="library" activeClassName="active">
-        Library
-      </Link>
+      <Link to="library">Library</Link>
     </nav>
   </div>
 )
