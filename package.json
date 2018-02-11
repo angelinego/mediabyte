@@ -19,7 +19,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "serve": "serve -s build",
-    "deploy": "pushstate-server build"
+    "deploy": "npm install -g pushstate-server && pushstate-server build"
   },
   "devDependencies": {
     "pushstate-server": "3.0.1",
