@@ -71,7 +71,7 @@ class MediaGalleryPage extends Component {
             </div>
           </div>
         ) : (
-          "loading ...."
+          "LOADING..."
         )}
       </div>
     )
@@ -80,7 +80,7 @@ class MediaGalleryPage extends Component {
   // Dispatches *searchMediaAction* immediately after initial rendering.
   // Note that we are using the dispatch method from the store to execute this task, courtesy of react-redux
   componentDidMount() {
-    this.props.dispatch(searchMediaAction("cloud"))
+    this.props.dispatch(searchMediaAction("laptop"))
   }
 }
 

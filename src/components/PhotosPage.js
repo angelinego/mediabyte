@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 // First, we extract images, onHandleSelectImage, and selectedImage from
 // props using ES6 destructuring assignment and then render.
-const PhotosPage = ({ images, onHandleSelectImage, selectedImage }) => (
+const PhotosPage = ({ images, onHandleSelectImage, selectedImage = {} }) => (
   <div className="col-md-6">
     <h2> Images </h2>
     <div className="selected-image">
@@ -25,8 +25,8 @@ const PhotosPage = ({ images, onHandleSelectImage, selectedImage }) => (
 // Define PropTypes
 PhotosPage.propTypes = {
   images: PropTypes.array.isRequired,
-  selectedImage: PropTypes.object,
-  onHandleSelectImage: PropTypes.func.isRequired
+  onHandleSelectImage: PropTypes.func,
+  selectedImage: PropTypes.object
 }
 
 export default PhotosPage
